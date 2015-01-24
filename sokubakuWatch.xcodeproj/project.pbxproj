@@ -1,0 +1,721 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE28AA551A7366DE00FE302C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE28AA541A7366DE00FE302C /* main.m */; };
+		DE28AA581A7366DE00FE302C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE28AA571A7366DE00FE302C /* AppDelegate.m */; };
+		DE28AA5B1A7366DE00FE302C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE28AA5A1A7366DE00FE302C /* ViewController.m */; };
+		DE28AA5E1A7366DE00FE302C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE28AA5C1A7366DE00FE302C /* Main.storyboard */; };
+		DE28AA601A7366DE00FE302C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE28AA5F1A7366DE00FE302C /* Images.xcassets */; };
+		DE28AA631A7366DE00FE302C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE28AA611A7366DE00FE302C /* LaunchScreen.xib */; };
+		DE28AA6F1A7366DE00FE302C /* sokubakuWatchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE28AA6E1A7366DE00FE302C /* sokubakuWatchTests.m */; };
+		DE28AA7F1A73675B00FE302C /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE28AA7E1A73675B00FE302C /* WatchKit.framework */; };
+		DE28AA861A73675B00FE302C /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE28AA851A73675B00FE302C /* InterfaceController.m */; };
+		DE28AA891A73675B00FE302C /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE28AA881A73675B00FE302C /* NotificationController.m */; };
+		DE28AA8C1A73675B00FE302C /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE28AA8B1A73675B00FE302C /* GlanceController.m */; };
+		DE28AA8E1A73675B00FE302C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE28AA8D1A73675B00FE302C /* Images.xcassets */; };
+		DE28AA921A73675B00FE302C /* sokubakuWatch Watch App.app in Resources */ = {isa = PBXBuildFile; fileRef = DE28AA911A73675B00FE302C /* sokubakuWatch Watch App.app */; };
+		DE28AA991A73675B00FE302C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE28AA981A73675B00FE302C /* Interface.storyboard */; };
+		DE28AA9B1A73675B00FE302C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE28AA9A1A73675B00FE302C /* Images.xcassets */; };
+		DE28AA9E1A73675B00FE302C /* sokubakuWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DE28AA7C1A73675B00FE302C /* sokubakuWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DE28AAA91A7382BB00FE302C /* top.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE28AAA81A7382BB00FE302C /* top.jpg */; };
+		DE28AAAC1A7384A200FE302C /* SecondInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE28AAAB1A7384A200FE302C /* SecondInterfaceController.m */; };
+		DE28AAAF1A738C9200FE302C /* WKTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE28AAAE1A738C9200FE302C /* WKTableCell.m */; };
+		DE7B215D1A73CCFA00F6590B /* ThirdInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7B215C1A73CCFA00F6590B /* ThirdInterfaceController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE28AA691A7366DE00FE302C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE28AA471A7366DE00FE302C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE28AA4E1A7366DE00FE302C;
+			remoteInfo = sokubakuWatch;
+		};
+		DE28AA931A73675B00FE302C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE28AA471A7366DE00FE302C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE28AA901A73675B00FE302C;
+			remoteInfo = "sokubakuWatch Watch App";
+		};
+		DE28AA9C1A73675B00FE302C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE28AA471A7366DE00FE302C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE28AA7B1A73675B00FE302C;
+			remoteInfo = "sokubakuWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DE28AAA51A73675B00FE302C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DE28AA9E1A73675B00FE302C /* sokubakuWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DE28AA4F1A7366DE00FE302C /* sokubakuWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sokubakuWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE28AA531A7366DE00FE302C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE28AA541A7366DE00FE302C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DE28AA561A7366DE00FE302C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DE28AA571A7366DE00FE302C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DE28AA591A7366DE00FE302C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DE28AA5A1A7366DE00FE302C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DE28AA5D1A7366DE00FE302C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE28AA5F1A7366DE00FE302C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DE28AA621A7366DE00FE302C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DE28AA681A7366DE00FE302C /* sokubakuWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sokubakuWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE28AA6D1A7366DE00FE302C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE28AA6E1A7366DE00FE302C /* sokubakuWatchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sokubakuWatchTests.m; sourceTree = "<group>"; };
+		DE28AA7C1A73675B00FE302C /* sokubakuWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "sokubakuWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE28AA7E1A73675B00FE302C /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = SDKROOT; };
+		DE28AA821A73675B00FE302C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE28AA831A73675B00FE302C /* PushNotificationPayload.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PushNotificationPayload.json; sourceTree = "<group>"; };
+		DE28AA841A73675B00FE302C /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		DE28AA851A73675B00FE302C /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		DE28AA871A73675B00FE302C /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		DE28AA881A73675B00FE302C /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		DE28AA8A1A73675B00FE302C /* GlanceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlanceController.h; sourceTree = "<group>"; };
+		DE28AA8B1A73675B00FE302C /* GlanceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlanceController.m; sourceTree = "<group>"; };
+		DE28AA8D1A73675B00FE302C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DE28AA911A73675B00FE302C /* sokubakuWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sokubakuWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE28AA971A73675B00FE302C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE28AA981A73675B00FE302C /* Interface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
+		DE28AA9A1A73675B00FE302C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DE28AAA81A7382BB00FE302C /* top.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = top.jpg; sourceTree = "<group>"; };
+		DE28AAAA1A7384A200FE302C /* SecondInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecondInterfaceController.h; path = "sokubakuWatch Watch App/SecondInterfaceController.h"; sourceTree = SOURCE_ROOT; };
+		DE28AAAB1A7384A200FE302C /* SecondInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondInterfaceController.m; path = "sokubakuWatch Watch App/SecondInterfaceController.m"; sourceTree = SOURCE_ROOT; };
+		DE28AAAD1A738C9200FE302C /* WKTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKTableCell.h; sourceTree = "<group>"; };
+		DE28AAAE1A738C9200FE302C /* WKTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKTableCell.m; sourceTree = "<group>"; };
+		DE7B215B1A73CCFA00F6590B /* ThirdInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdInterfaceController.h; sourceTree = "<group>"; };
+		DE7B215C1A73CCFA00F6590B /* ThirdInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdInterfaceController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE28AA4C1A7366DE00FE302C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE28AA651A7366DE00FE302C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE28AA791A73675B00FE302C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE28AA7F1A73675B00FE302C /* WatchKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE28AA461A7366DE00FE302C = {
+			isa = PBXGroup;
+			children = (
+				DE28AA511A7366DE00FE302C /* sokubakuWatch */,
+				DE28AA6B1A7366DE00FE302C /* sokubakuWatchTests */,
+				DE28AA801A73675B00FE302C /* sokubakuWatch WatchKit Extension */,
+				DE28AA951A73675B00FE302C /* sokubakuWatch Watch App */,
+				DE28AA7D1A73675B00FE302C /* Frameworks */,
+				DE28AA501A7366DE00FE302C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE28AA501A7366DE00FE302C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE28AA4F1A7366DE00FE302C /* sokubakuWatch.app */,
+				DE28AA681A7366DE00FE302C /* sokubakuWatchTests.xctest */,
+				DE28AA7C1A73675B00FE302C /* sokubakuWatch WatchKit Extension.appex */,
+				DE28AA911A73675B00FE302C /* sokubakuWatch Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE28AA511A7366DE00FE302C /* sokubakuWatch */ = {
+			isa = PBXGroup;
+			children = (
+				DE28AA561A7366DE00FE302C /* AppDelegate.h */,
+				DE28AA571A7366DE00FE302C /* AppDelegate.m */,
+				DE28AA591A7366DE00FE302C /* ViewController.h */,
+				DE28AA5A1A7366DE00FE302C /* ViewController.m */,
+				DE28AA5C1A7366DE00FE302C /* Main.storyboard */,
+				DE28AA5F1A7366DE00FE302C /* Images.xcassets */,
+				DE28AA611A7366DE00FE302C /* LaunchScreen.xib */,
+				DE28AA521A7366DE00FE302C /* Supporting Files */,
+			);
+			path = sokubakuWatch;
+			sourceTree = "<group>";
+		};
+		DE28AA521A7366DE00FE302C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE28AA531A7366DE00FE302C /* Info.plist */,
+				DE28AA541A7366DE00FE302C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DE28AA6B1A7366DE00FE302C /* sokubakuWatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				DE28AA6E1A7366DE00FE302C /* sokubakuWatchTests.m */,
+				DE28AA6C1A7366DE00FE302C /* Supporting Files */,
+			);
+			path = sokubakuWatchTests;
+			sourceTree = "<group>";
+		};
+		DE28AA6C1A7366DE00FE302C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE28AA6D1A7366DE00FE302C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DE28AA7D1A73675B00FE302C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE28AA7E1A73675B00FE302C /* WatchKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE28AA801A73675B00FE302C /* sokubakuWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DE28AA841A73675B00FE302C /* InterfaceController.h */,
+				DE28AA851A73675B00FE302C /* InterfaceController.m */,
+				DE28AAAD1A738C9200FE302C /* WKTableCell.h */,
+				DE28AAAE1A738C9200FE302C /* WKTableCell.m */,
+				DE28AAAA1A7384A200FE302C /* SecondInterfaceController.h */,
+				DE28AAAB1A7384A200FE302C /* SecondInterfaceController.m */,
+				DE7B215B1A73CCFA00F6590B /* ThirdInterfaceController.h */,
+				DE7B215C1A73CCFA00F6590B /* ThirdInterfaceController.m */,
+				DE28AA871A73675B00FE302C /* NotificationController.h */,
+				DE28AA881A73675B00FE302C /* NotificationController.m */,
+				DE28AA8A1A73675B00FE302C /* GlanceController.h */,
+				DE28AA8B1A73675B00FE302C /* GlanceController.m */,
+				DE28AA8D1A73675B00FE302C /* Images.xcassets */,
+				DE28AA811A73675B00FE302C /* Supporting Files */,
+			);
+			path = "sokubakuWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		DE28AA811A73675B00FE302C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE28AA821A73675B00FE302C /* Info.plist */,
+				DE28AA831A73675B00FE302C /* PushNotificationPayload.json */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DE28AA951A73675B00FE302C /* sokubakuWatch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				DE28AAA81A7382BB00FE302C /* top.jpg */,
+				DE28AA981A73675B00FE302C /* Interface.storyboard */,
+				DE28AA9A1A73675B00FE302C /* Images.xcassets */,
+				DE28AA961A73675B00FE302C /* Supporting Files */,
+			);
+			path = "sokubakuWatch Watch App";
+			sourceTree = "<group>";
+		};
+		DE28AA961A73675B00FE302C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE28AA971A73675B00FE302C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE28AA4E1A7366DE00FE302C /* sokubakuWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE28AA721A7366DE00FE302C /* Build configuration list for PBXNativeTarget "sokubakuWatch" */;
+			buildPhases = (
+				DE28AA4B1A7366DE00FE302C /* Sources */,
+				DE28AA4C1A7366DE00FE302C /* Frameworks */,
+				DE28AA4D1A7366DE00FE302C /* Resources */,
+				DE28AAA51A73675B00FE302C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE28AA9D1A73675B00FE302C /* PBXTargetDependency */,
+			);
+			name = sokubakuWatch;
+			productName = sokubakuWatch;
+			productReference = DE28AA4F1A7366DE00FE302C /* sokubakuWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DE28AA671A7366DE00FE302C /* sokubakuWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE28AA751A7366DE00FE302C /* Build configuration list for PBXNativeTarget "sokubakuWatchTests" */;
+			buildPhases = (
+				DE28AA641A7366DE00FE302C /* Sources */,
+				DE28AA651A7366DE00FE302C /* Frameworks */,
+				DE28AA661A7366DE00FE302C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE28AA6A1A7366DE00FE302C /* PBXTargetDependency */,
+			);
+			name = sokubakuWatchTests;
+			productName = sokubakuWatchTests;
+			productReference = DE28AA681A7366DE00FE302C /* sokubakuWatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DE28AA7B1A73675B00FE302C /* sokubakuWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE28AAA21A73675B00FE302C /* Build configuration list for PBXNativeTarget "sokubakuWatch WatchKit Extension" */;
+			buildPhases = (
+				DE28AA781A73675B00FE302C /* Sources */,
+				DE28AA791A73675B00FE302C /* Frameworks */,
+				DE28AA7A1A73675B00FE302C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE28AA941A73675B00FE302C /* PBXTargetDependency */,
+			);
+			name = "sokubakuWatch WatchKit Extension";
+			productName = "sokubakuWatch WatchKit Extension";
+			productReference = DE28AA7C1A73675B00FE302C /* sokubakuWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		DE28AA901A73675B00FE302C /* sokubakuWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE28AA9F1A73675B00FE302C /* Build configuration list for PBXNativeTarget "sokubakuWatch Watch App" */;
+			buildPhases = (
+				DE28AA8F1A73675B00FE302C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "sokubakuWatch Watch App";
+			productName = "sokubakuWatch Watch App";
+			productReference = DE28AA911A73675B00FE302C /* sokubakuWatch Watch App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE28AA471A7366DE00FE302C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = just1factory;
+				TargetAttributes = {
+					DE28AA4E1A7366DE00FE302C = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					DE28AA671A7366DE00FE302C = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = DE28AA4E1A7366DE00FE302C;
+					};
+					DE28AA7B1A73675B00FE302C = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					DE28AA901A73675B00FE302C = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = DE28AA4A1A7366DE00FE302C /* Build configuration list for PBXProject "sokubakuWatch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE28AA461A7366DE00FE302C;
+			productRefGroup = DE28AA501A7366DE00FE302C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE28AA4E1A7366DE00FE302C /* sokubakuWatch */,
+				DE28AA671A7366DE00FE302C /* sokubakuWatchTests */,
+				DE28AA7B1A73675B00FE302C /* sokubakuWatch WatchKit Extension */,
+				DE28AA901A73675B00FE302C /* sokubakuWatch Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE28AA4D1A7366DE00FE302C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE28AA5E1A7366DE00FE302C /* Main.storyboard in Resources */,
+				DE28AA631A7366DE00FE302C /* LaunchScreen.xib in Resources */,
+				DE28AA601A7366DE00FE302C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE28AA661A7366DE00FE302C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE28AA7A1A73675B00FE302C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE28AA921A73675B00FE302C /* sokubakuWatch Watch App.app in Resources */,
+				DE28AA8E1A73675B00FE302C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE28AA8F1A73675B00FE302C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE28AAA91A7382BB00FE302C /* top.jpg in Resources */,
+				DE28AA991A73675B00FE302C /* Interface.storyboard in Resources */,
+				DE28AA9B1A73675B00FE302C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE28AA4B1A7366DE00FE302C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE28AA5B1A7366DE00FE302C /* ViewController.m in Sources */,
+				DE28AA581A7366DE00FE302C /* AppDelegate.m in Sources */,
+				DE28AA551A7366DE00FE302C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE28AA641A7366DE00FE302C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE28AA6F1A7366DE00FE302C /* sokubakuWatchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE28AA781A73675B00FE302C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE28AA891A73675B00FE302C /* NotificationController.m in Sources */,
+				DE28AAAF1A738C9200FE302C /* WKTableCell.m in Sources */,
+				DE28AA861A73675B00FE302C /* InterfaceController.m in Sources */,
+				DE7B215D1A73CCFA00F6590B /* ThirdInterfaceController.m in Sources */,
+				DE28AA8C1A73675B00FE302C /* GlanceController.m in Sources */,
+				DE28AAAC1A7384A200FE302C /* SecondInterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE28AA6A1A7366DE00FE302C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE28AA4E1A7366DE00FE302C /* sokubakuWatch */;
+			targetProxy = DE28AA691A7366DE00FE302C /* PBXContainerItemProxy */;
+		};
+		DE28AA941A73675B00FE302C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE28AA901A73675B00FE302C /* sokubakuWatch Watch App */;
+			targetProxy = DE28AA931A73675B00FE302C /* PBXContainerItemProxy */;
+		};
+		DE28AA9D1A73675B00FE302C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE28AA7B1A73675B00FE302C /* sokubakuWatch WatchKit Extension */;
+			targetProxy = DE28AA9C1A73675B00FE302C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DE28AA5C1A7366DE00FE302C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE28AA5D1A7366DE00FE302C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE28AA611A7366DE00FE302C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE28AA621A7366DE00FE302C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE28AA701A7366DE00FE302C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DE28AA711A7366DE00FE302C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE28AA731A7366DE00FE302C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = sokubakuWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DE28AA741A7366DE00FE302C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = sokubakuWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DE28AA761A7366DE00FE302C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = sokubakuWatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sokubakuWatch.app/sokubakuWatch";
+			};
+			name = Debug;
+		};
+		DE28AA771A7366DE00FE302C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = sokubakuWatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sokubakuWatch.app/sokubakuWatch";
+			};
+			name = Release;
+		};
+		DE28AAA01A73675B00FE302C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = sokubakuWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "sokubakuWatch Watch App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		DE28AAA11A73675B00FE302C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				IBSC_MODULE = sokubakuWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "sokubakuWatch Watch App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		DE28AAA31A73675B00FE302C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "sokubakuWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DE28AAA41A73675B00FE302C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "sokubakuWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE28AA4A1A7366DE00FE302C /* Build configuration list for PBXProject "sokubakuWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE28AA701A7366DE00FE302C /* Debug */,
+				DE28AA711A7366DE00FE302C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE28AA721A7366DE00FE302C /* Build configuration list for PBXNativeTarget "sokubakuWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE28AA731A7366DE00FE302C /* Debug */,
+				DE28AA741A7366DE00FE302C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE28AA751A7366DE00FE302C /* Build configuration list for PBXNativeTarget "sokubakuWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE28AA761A7366DE00FE302C /* Debug */,
+				DE28AA771A7366DE00FE302C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE28AA9F1A73675B00FE302C /* Build configuration list for PBXNativeTarget "sokubakuWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE28AAA01A73675B00FE302C /* Debug */,
+				DE28AAA11A73675B00FE302C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE28AAA21A73675B00FE302C /* Build configuration list for PBXNativeTarget "sokubakuWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE28AAA31A73675B00FE302C /* Debug */,
+				DE28AAA41A73675B00FE302C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE28AA471A7366DE00FE302C /* Project object */;
+}
