@@ -14,6 +14,27 @@
 
 @implementation AppDelegate
 
+//[WIP]WatchKitのハンドルリクエスト受け取り
+- (void)application:(UIApplication *)application handleWatchKitExtensionRequest:(NSDictionary *)userInfo reply:(void(^)(NSDictionary *replyInfo))reply
+{
+    //@todo:
+    NSString *request = [userInfo objectForKey:@"requestString"];
+    
+    if ([request isEqualToString:@"executeMethodA"]) {
+        // Do whatever you want to do when sent the message. For instance...
+        NSLog(@"Success!");
+    }
+    
+    // This is just an example of what you could return. The one requirement is
+    // you do have to execute the reply block, even if it is just to 'reply(nil)'.
+    // All of the objects in the dictionary [must be serializable to a property list file][3].
+    // If necessary, you can covert other objects to NSData blobs first.
+    NSArray *objects = [[NSArray alloc] initWithObjects:@"myObjectA", @"myObjectB", @"myObjectC", nil];
+    NSArray *keys = [[NSArray alloc] initWithObjects:@"objectAName", @"objectBName", @"objectCName", nil];
+    NSDictionary *replyContent = [[NSDictionary alloc] initWithObjects:objects forKeys:keys];
+    
+    reply(replyContent);
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.

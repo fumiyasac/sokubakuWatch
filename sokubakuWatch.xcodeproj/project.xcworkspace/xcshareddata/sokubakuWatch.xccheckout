@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0F2649EB-0CBD-46BC-81E9-C285B9F27DDC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>sokubakuWatch</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FAE96F37833B092D57A12F2F0C9D36E20654A728</key>
+		<string>github.com:fumiyasac/sokubakuWatch.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>sokubakuWatch.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FAE96F37833B092D57A12F2F0C9D36E20654A728</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:fumiyasac/sokubakuWatch.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FAE96F37833B092D57A12F2F0C9D36E20654A728</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FAE96F37833B092D57A12F2F0C9D36E20654A728</string>
+			<key>IDESourceControlWCCName</key>
+			<string>sokubakuWatch</string>
+		</dict>
+	</array>
+</dict>
+</plist>

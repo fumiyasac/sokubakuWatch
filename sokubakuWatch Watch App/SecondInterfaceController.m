@@ -19,9 +19,12 @@
 
 - (instancetype)initWithContext:(id)context
 {
-    self = [super initWithContext:context];
+    self = [super init];
     if (self){
         NSLog(@"%@ initWithContext", self);
+        
+        //テーブルビューのデータを読み込む（※このタイミングでしないと戻った時の挙動がおかしくなる）
+        [self tableDataLoad];
     }
     return self;
 }
@@ -29,6 +32,24 @@
 - (void)willActivate
 {
     NSLog(@"%@ will activate", self);
+}
+
+- (void)table:(WKInterfaceTable *)table didSelectRowAtIndex:(NSInteger)rowIndex {
+
+    //セグエなしの遷移を行う（値の引き渡しも行う）
+    int targetIndex = (int)rowIndex;
+    NSLog(@"%d",targetIndex);
+    NSLog(@"%@",arrayObjectForSecond[targetIndex]);
+    [self pushControllerWithName:@"ThirdView" context:arrayObjectForSecond[targetIndex]];
+}
+
+- (void)didDeactivate
+{
+    NSLog(@"%@ did deactivate", self);
+}
+
+//テーブルビューの組み立てを行うメソッド
+- (void)tableDataLoad{
     
     //項目配列の初期化
     arrayObjectForLabel  = @[@"カップ麺",@"お風呂",@"DVD鑑賞",@"お洗濯",@"デート",@"お買い物",@"お料理",@"お掃除",@"定時退社"];
@@ -46,24 +67,6 @@
         [theRow.sokubakuName setText:arrayObjectForLabel[i]];
         [theRow.sokubakuTime setText:arrayObjectForTime[i]];
     }
-}
-
-- (void)table:(WKInterfaceTable *)table didSelectRowAtIndex:(NSInteger)rowIndex {
-
-    //セグエなしの遷移を行う
-    int targetIndex = (int)rowIndex;
-    
-    NSLog(@"%d",targetIndex);
-    NSLog(@"%@",arrayObjectForSecond[targetIndex]);
-    
-    [self pushControllerWithName:@"ThirdView" context:arrayObjectForSecond[targetIndex]];
-}
-
-
-
-- (void)didDeactivate
-{
-    NSLog(@"%@ did deactivate", self);
 }
 
 @end

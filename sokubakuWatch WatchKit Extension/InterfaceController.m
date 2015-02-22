@@ -17,11 +17,13 @@
 @implementation InterfaceController
 
 - (instancetype)initWithContext:(id)context {
-    self = [super initWithContext:context];
+    self = [super init];
     
     if (self)
     {
         NSLog(@"%@ initWithContext", self);
+        
+        [self.titleLabel setText:@"束縛ウォッチ"];
         
         //束縛イメージの画像を入れる
         NSString *donbeImageName = @"top.jpg";

@@ -11,6 +11,8 @@
 
 @interface InterfaceController : WKInterfaceController
 
+@property (strong, nonatomic) IBOutlet WKInterfaceLabel *titleLabel;
+
 //束縛されているイメージを出力するイメージビュー
 @property (strong, nonatomic) IBOutlet WKInterfaceImage *sokubakuImage;
 

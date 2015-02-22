@@ -16,7 +16,7 @@
 
 - (instancetype)initWithContext:(id)context
 {
-    self = [super initWithContext:context];
+    self = [super init];
     if (self){
         
         //ラベルの初期値を設定
@@ -79,6 +79,17 @@
 - (void)timerDone:(NSTimer *)timer
 {
     NSLog(@"STOP!");
+        
+    //Send count to parent application
+    NSString *requestString = [NSString stringWithFormat:@"executeMethodA"];
+    
+    //This string is arbitrary, just must match here and at the iPhone side of the implementation.
+    NSDictionary *applicationData = [[NSDictionary alloc] initWithObjects:@[requestString] forKeys:@[@"theRequestString"]];
+    
+    //Handle reciever in app delegate of parent app
+    [WKInterfaceController openParentApplication:applicationData reply:^(NSDictionary *replyInfo, NSError *error) {
+        NSLog(@"\nReply info: %@\nError: %@",replyInfo, error);
+    }];
     
     //ラベルの文字列を指定
     [self.topLabelText setText:@"おめでとう！"];
